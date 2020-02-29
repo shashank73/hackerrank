@@ -7,9 +7,11 @@ using namespace std;
 
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int a, b, c;
-    cin >> a >> b >> c;
-    cout << a + b + c;
+    int t,a,b;
+    cin>>t;
+    while(t--) {
+        cin>>a>>b;
+        cout<<floor(sqrt(b))-ceil(sqrt(a))+1<<"\n";
+    }
     return 0;
 }

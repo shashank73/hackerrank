@@ -19,23 +19,21 @@
 #include <sstream>
 #include <iostream>
 #include <algorithm>
+#include <unordered_map>
+
 using namespace std;
 
 
-int main() {
-    int N;
-    cin >> N;
-    if(!(N%2 == 0)) {
-        cout<<"Weird";
+int main(){
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for(int arr_i = 0;arr_i < n;arr_i++){
+       cin >> arr[arr_i];
     }
-    else if((N%2==0)&& N>=2 && N<=5) {
-        cout<<"Not Weird";
-    }
-    else if((N%2==0)&& N>=6 && N<=20) {
-        cout<<"Weird";
-    }
-    else if((N%2==0)&& N>=20) {
-        cout<<"Not Weird";
+    for(int arr_i =n-1;arr_i>=0;arr_i--){
+       cout<< arr[arr_i]<<" ";
     }
     return 0;
 }
+

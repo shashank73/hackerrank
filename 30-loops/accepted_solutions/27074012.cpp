@@ -24,10 +24,10 @@
 using namespace std;
 
 
-int main(){
+int main() {
     int N,i;
     cin >> N;
-    for(i=1;i<11;i++){
+    for(i=1; i<11; i++) {
         cout<<N<<" x "<<i<<" = "<<N*i<<endl;
     }
     return 0;

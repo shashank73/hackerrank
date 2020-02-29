@@ -24,7 +24,7 @@
 using namespace std;
 
 
-int main(){
+int main() {
     int a0;
     int a1;
     int a2,A=0;
@@ -34,17 +34,29 @@ int main(){
     int b2,B=0;
     cin >> b0 >> b1 >> b2;
     if (a0>b0)
-        {A=A+1;}
+    {
+        A=A+1;
+    }
     else if(a0<b0)
-        {B=B+1;}
-        if (a1>b1)
-        {A=A+1;}
+    {
+        B=B+1;
+    }
+    if (a1>b1)
+    {
+        A=A+1;
+    }
     else if(a1<b1)
-        {B=B+1;}
-        if (a2>b2)
-        {A=A+1;}
+    {
+        B=B+1;
+    }
+    if (a2>b2)
+    {
+        A=A+1;
+    }
     else if(a2<b2)
-        {B=B+1;}
+    {
+        B=B+1;
+    }
     cout<<A<<" "<<B;
     return 0;
 }

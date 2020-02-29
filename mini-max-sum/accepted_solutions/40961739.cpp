@@ -8,8 +8,14 @@ using namespace std;
 
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int a, b, c;
-    cin >> a >> b >> c;
-    cout << a + b + c;
+    int i;
+    long long a[5];
+    long long sum;
+    for(i=0; i<5; i++) {
+        cin>>a[i];
+        sum=sum+a[i];
+    }
+    sort(a,a+5);
+    cout<<sum-a[4]<<" "<<sum-a[0]<<endl;
     return 0;
 }

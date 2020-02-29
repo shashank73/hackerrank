@@ -18,33 +18,33 @@ using namespace std;
 void partition(vector <int>  ar) {
     vector <int> l,e,r;
     int p=ar[0];
-    for(int i=0; i<ar.size(); i++) {
+    for(int i=0;i<ar.size();i++){
         if(ar[i]==p) e.push_back(ar[i]);
         else if(ar[i]<p) l.push_back(ar[i]);
         else r.push_back(ar[i]);
     }
-    for(int i=0; i<l.size(); i++) {
+    for(int i=0;i<l.size();i++){
         cout<<l[i]<<" ";
     }
-    for(int i=0; i<e.size(); i++) {
+    for(int i=0;i<e.size();i++){
         cout<<e[i]<<" ";
     }
-    for(int i=0; i<r.size(); i++) {
+    for(int i=0;i<r.size();i++){
         cout<<r[i]<<" ";
     }
 }
 int main(void) {
-    vector <int>  _ar;
-    int _ar_size;
-    cin >> _ar_size;
-
-    for(int _ar_i=0; _ar_i<_ar_size; _ar_i++) {
+   vector <int>  _ar;
+   int _ar_size;
+   cin >> _ar_size;
+    
+     for(int _ar_i=0; _ar_i<_ar_size; _ar_i++) {
         int _ar_tmp;
         cin >> _ar_tmp;
-        _ar.push_back(_ar_tmp);
+        _ar.push_back(_ar_tmp); 
     }
 
-    partition(_ar);
-
-    return 0;
+   partition(_ar);
+   
+   return 0;
 }
